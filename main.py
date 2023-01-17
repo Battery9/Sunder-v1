@@ -2,6 +2,8 @@ import discord
 from discord.ext import commands
 import os
 import asyncio
+from dotenv import load_dotenv
+load_dotenv()
 
 #Allowing All Intents of Discord.
 intents = discord.Intents.all()
@@ -26,6 +28,5 @@ async def load():
 
 async def main():
     await load()
-    await bot.start('NzI0ODI2ODExMjQ2MDUxMzQ4.GQY3ao.zWGXDehqsFnMExEjEImXxpkRjdILRaAlmMw0oM')
-
+    await bot.start(os.getenv('token'))
 asyncio.run(main())
