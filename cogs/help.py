@@ -55,7 +55,7 @@ class Help(commands.Cog):
         scrims_embed = discord.Embed(title="**__❑ On-going Tournaments and Scrims__**", description="**>> Please visit the below channel to learn about and join different events happening right now across different platforms of UREsports. Our only talented admin have listed all the Scrims and Tournament just for you. Unleash your talents, show off your skills and roast your opponents with your squad.\nIt’s time to have some fun and make some noise**\n\n<#1125346374737727530>", color=0x00ff00).set_footer(text="Sunder | UREsports")
         
         ##Reading the ini file inside res to use.
-        config.read('res\data.ini')
+        config.read('res/data.ini')
         popular = config['var']['popular']
         if(popular!=''):
             scrims_embed.add_field(name="__❑ Popular: __", value=popular)
