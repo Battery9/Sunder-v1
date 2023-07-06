@@ -19,6 +19,9 @@ bot.remove_command('help')
 async def on_ready():
     print(f'We have logged in as {bot.user}')
 
+async def on_command_error(ctx, error):
+    print(f'Error: {error}')
+
 #Loading/Unloading Commands from cogs folder.
 async def load():
     for filename in os.listdir('./cogs'):
