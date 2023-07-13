@@ -85,7 +85,6 @@ class Help(commands.Cog):
         embed = discord.Embed(title="❏ **__HELP MENU __**⫸", description=f"Hey <@{userid}>, this is Sunder, available here 24/7 to help you. I pride myself on having a faster typing speed than any other moderator on this server, so I am confident that I can help you find what you're looking for. Why not give me a try before tagging those lazy folks? \n **Ohh Btw, how may i help you?**", color=0x52f3ff)
         embed.set_thumbnail(url="https://i.ibb.co/LC96Nb1/ezgif-com-gif-maker.gif")
         await ctx.reply(embed=embed, view=view, delete_after=200)
-        await ctx.message.delete()
 
 #Adding my class as a cog to be loaded in main.py.
 async def setup(bot):
